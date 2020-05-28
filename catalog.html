@@ -68,45 +68,53 @@
          <h2>Фильтр:</h2>
          <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
-             <legend>Производители:</legend>
-             <ul>
-              <li>
-               <input type="checkbox" name="bosch" id="filter-bosh" checked>
-               <label for="filter-bosh">BOSCH</label>
+              <legend>Цена:</legend>
+              <label for="filter-price" class="visually-hidden">Цена</label>
+              <input type="range" id="filter-price" name="filter-price" min="0" max="3000" step="1">
+              <input type="text" name="price-min" value="0">
+              <span>—</span>
+              <input type="text" name="price-max" value="30000">
+           </fieldset>
+           <fieldset>
+              <legend>Производители:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="bosch" id="filter-bosh" checked>
+                  <label for="filter-bosh">BOSCH</label>
+               </li>
+               <li>
+                  <input type="checkbox" name="interskol" id="filter-interskol">
+                  <label for="filter-interskol">ИНТЕРСКОЛ</label>
+               </li>
+               <li>
+                  <input type="checkbox" name="makita" id="filter-makita" checked>
+                  <label for="filter-makita">MAKITA</label>
+               </li>
+               <li>
+                  <input type="checkbox" name="malin-dewalt" id="filter-dewalt">
+                  <label for="filter-dewalt">DEWALT</label>
+               </li>
+               <li>
+                  <input type="checkbox" name="hitachi" id="filter-hitachi">
+                  <label for="filter-hitachi">HITACHI</label>
+               </li>
+            </ul>
+         </fieldset>
+         <fieldset>
+           <legend>Питание:</legend>
+           <ul>
+             <li>
+               <input type="radio" name="pitanie" value="accumulator" id="filter-accumulator" checked>
+               <label for="filter-accumulator">Аккумуляторные</label>
             </li>
             <li>
-               <input type="checkbox" name="interskol" id="filter-interskol">
-               <label for="filter-interskol">ИНТЕРСКОЛ</label>
-            </li>
-            <li>
-               <input type="checkbox" name="makita" id="filter-makita" checked>
-               <label for="filter-makita">MAKITA</label>
-            </li>
-            <li>
-               <input type="checkbox" name="malin-dewalt" id="filter-dewalt">
-               <label for="filter-dewalt">DEWALT</label>
-            </li>
-            <li>
-               <input type="checkbox" name="hitachi" id="filter-hitachi">
-               <label for="filter-hitachi">HITACHI</label>
+               <input type="radio" name="pitanie" value="setevye" id="filter-set">
+               <label for="filter-set">Сетевые</label>
             </li>
          </ul>
       </fieldset>
-      <fieldset>
-       <legend>Питание:</legend>
-       <ul>
-        <li>
-         <input type="radio" name="pitanie" value="accumulator" id="filter-accumulator" checked>
-         <label for="filter-accumulator">Аккумуляторные</label>
-      </li>
-      <li>
-         <input type="radio" name="pitanie" value="setevye" id="filter-set">
-         <label for="filter-set">Сетевые</label>
-      </li>
-   </ul>
-</fieldset>
-<button type="submit">Показать</button>
-</form>
+      <button type="submit">Показать</button>
+   </form>
 </section>
 <div>
    <p>
