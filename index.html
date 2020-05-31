@@ -3,6 +3,9 @@
 <head>
    <meta charset="utf-8">
    <title>HTML Academy: Техномарт</title>
+      <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
    <header class="main-header">
@@ -10,8 +13,8 @@
          <a class="main-header-logo" href="index.html"> <img src="img/logo.png" width="220" height="47" alt="Техномарт">
          </a>
          <input type="text" placeholder="Поиск:">
-         <a class="main-header-zakladka" href="">Закладки</a>
-         <a class="main-header-busket" href="">Корзина</a>
+         <a class="main-header-zakladka" href="">Закладки: 0</a>
+         <a class="main-header-busket" href="">Корзина: 0</a>
          <a class="main-header-zakaz" href="">Оформить заказ</a>
       </div>
       <div class="main-header-title">
@@ -50,17 +53,17 @@
    <main>
       <section class="actions">
          <div class="actions-list">
-            <div class="actions-item">
+            <div class="actions-item-1">
                <h2>Материалы</h2>
                <img src="img/icon-1.png">
                <a href="">На любой вкус</a>
             </div>
-            <div class="actions-item">
+            <div class="actions-item-2">
                <h2>Инструмент</h2>
                <img src="img/icon-2.png">
                <a href="">На все случаи</a>
             </div>
-            <div class="actions-item">
+            <div class="actions-item-3">
                <h2>Техника</h2>
                <img src="img/icon-3.png">
                <a href="">Для стройки</a>
@@ -73,12 +76,12 @@
             <a href="catalog.html">Открыть каталог</a>
          </div>
          <div class="vertical-actions-list">
-            <div class="actions-item">
+            <div class="actions-item4">
                <h2>Скидки 50%</h2>
                <img src="img/icon-4.png">
                <a href="">На 350 товаров</a>
             </div>
-            <div class="actions-item">
+            <div class="actions-item5">
                <h2>Доставка</h2>
                <img src="img/icon-5.png">
                <a href="">Бесплатно</a>
@@ -86,10 +89,12 @@
          </div>
       </section>
       <section class="popular-items">
+         <div class="popularno">
          <h2 class="popular">
             Популярные товары:
          </h2>
          <a class="popular-link" href="">Все популярные товары</a>
+         </div>
          <ul class="main-popular-items">
             <li>
                <article>
@@ -151,10 +156,12 @@
          </ul>
       </section>
       <section class="brands">
+         <div class="popularno">
          <h2 class="popular">
             Популярные производители:
          </h2>
          <a class="popular-link" href="">Все производители</a>
+         </div>
          <ul class="popular-brands">
             <li>
                <a href=""><img src="img/bosh.jpg" alt="BOSCH "></a>
@@ -194,7 +201,7 @@
             <li>
                <a href="">Доставка</a>
                <h3>Доставка</h3>
-               <p>
+               <p class="main-dostavka">
                   Мы с удовольствием доставим ваш товар прямо 
                   к вашему подъезду совершенно бесплатно!
                   Ведь мы неплохо заработаем, 
@@ -205,7 +212,7 @@
             <li>
                <a href="">Гарантия</a>
                <h3>Гарантия</h3>
-               <p>
+               <p class="main-garantee">
                   Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
                   <img src="img/garanty.png" alt="Гарантия">
                </p>
@@ -213,7 +220,7 @@
             <li>
                <a href="">Кредит</a>
                <h3>Кредит</h3>
-               <p>
+               <p class="main-credit"> 
                   Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
                   <img src="img/credit.png" alt="Кредит">
                </p>
@@ -269,9 +276,9 @@
                </li>
             </ul>
          </nav>
-         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-         <a href="tel:+781255505555">+7(812)555-05-555</a>
-         <ul>
+         <p class="white-footer-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+         <a class="white-footer-text" href="tel:+781255505555">+7(812)555-05-555</a>
+         <ul class="footer-bottom-navigation">
             <li>
                <a href="blank.html">Материалы</a>
             </li>
@@ -318,7 +325,7 @@
       </div>
    </footer>
    <section class="main-modal-form">
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label for="form-name">Ваше имя:</label>
         <input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
