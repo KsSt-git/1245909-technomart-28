@@ -501,3 +501,30 @@ ul {
 	line-height: 19px;
 	text-transform: uppercase;
 }
+
+.sort {
+	background-color: #F7F3EC;
+}
+
+.sort-title,
+ .sort-option li {
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.sort-option a{
+opacity: 0.3;
+border-bottom: 1px dotted #EE3643;
+}
+
+.sort-option a:hover {
+border-bottom: 1px solid #EE3643;
+opacity:1;
+}
+
+.sort-option a:active {
+color: #EE3643;
+opacity:1;
+border: none;
+}
