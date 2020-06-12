@@ -3,30 +3,49 @@
 <head>
    <meta charset="utf-8">
    <title>HTML Academy: Техномарт</title>
-      <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
    <header class="main-header">
-      <div class="main-header-top-content">
       <div class="main-header-top">
+        <div class="main-header-top-first container">
+          <div>
          <a class="main-header-logo" href="index.html"> <img src="img/logo.png" width="220" height="47" alt="Техномарт">
          </a>
+         </div>
+         <div>
          <input type="text" placeholder="Поиск:">
-         <a class="main-header-zakladka" href="">Закладки: 0</a>
-         <a class="main-header-busket" href="">Корзина: 0</a>
+         </div>
+         <div>
+         <a class="main-header-zakladka" href="">Закладки: 0</a> </div>
+         <div>
+         <a class="main-header-busket" href="">Корзина: 0</a> </div>
+         <div>
          <a class="main-header-zakaz" href="">Оформить заказ</a>
+         </div>
       </div>
-      <div class="main-header-title">
-         <p class="name">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      </div>
+
+            <div class="main-header-title container">
+        <div>
+         <p class="name">Интернет-магазин <br>строительных материалов <br>и инструментов для ремонта</p>
+         </div>
+         <div class="contact-header">
          <a class="phone" href="tel:+781255505555">+7(812)555-05-555</a>
          <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+         </div>
+         <div class="header-links">
+         <div class="head-links">
          <a class="enter" href="">Войти</a>
          <a class="registration" href="">Регистрация</a>
+         </div>
+         </div>
+      </div>
       </div>
       <nav>
-         <ul class="site-navigation">
+         <ul class="site-navigation container">
             <li>
                <a href="index.html">Главная</a>
             </li>
@@ -50,10 +69,9 @@
             </li>
          </ul>
       </nav>
-      </div>
    </header>
-   <main>
-      <section class="actions">
+   <main class="page-catalog-container">
+      <section class="actions container">
          <div class="actions-list">
             <div class="actions-item-1">
                <h2>Материалы</h2>
@@ -90,7 +108,7 @@
             </div>
          </div>
       </section>
-      <section class="popular-items">
+      <section class="popular-items container">
          <div class="popularno">
          <h2 class="popular">
             Популярные товары:
@@ -100,10 +118,11 @@
          <ul class="main-popular-items">
             <li>
                <article>
-                  <h3>Перфоратор BOSCH BFG 9000</h3>
+                  
                   <p>
                      <img src="img/9000.jpg" width="184" height="164" alt="Перфоратор BOSCH  BFG 9000">
                   </p>
+                  <h3>Перфоратор BOSCH BFG 9000</h3>
                   <p class="old-price">32500 Р.</p>
                   <p class="price">25500 Р.</p>
                   <p>
@@ -114,11 +133,12 @@
             </li>
             <li>
                <article>
-                  <h3>Перфоратор BOSCH BFG 3000</h3>
+                  
                   <p>
                      <span class="new">NEW</span>
                      <img src="img/3000.jpg" width="184" height="164" alt="Перфоратор BOSCH  BFG 3000">
                   </p>
+                  <h3>Перфоратор BOSCH BFG 3000</h3>
                   <p class="old-price">22500 Р.</p>
                   <p class="price">15500 Р.</p>
                   <p>
@@ -129,10 +149,11 @@
             </li>
             <li>
                <article>
-                  <h3>Перфоратор BOSCH BFG 6000</h3>
+                  
                   <p>
                      <img src="img/6000.jpg" width="184" height="164" alt="Перфоратор BOSCH  BFG 6000">
                   </p>
+                  <h3>Перфоратор BOSCH BFG 6000</h3>
                   <p class="old-price">30500 Р.</p>
                   <p class="price">25500 Р.</p>
                   <p>
@@ -143,11 +164,12 @@
             </li>
             <li>
                <article>
-                  <h3>Перфоратор BOSCH BFG 2000</h3>
+                  
                   <p>
                      <span class="new">NEW</span>
                      <img src="img/2000.jpg" width="184" height="164" alt="Перфоратор BOSCH  BFG 2000">
                   </p>
+                  <h3>Перфоратор BOSCH BFG 2000</h3>
                   <p class="price">12500 Р.</p>
                   <p>
                      <span class="buy">Купить</span>
@@ -157,7 +179,7 @@
             </li>
          </ul>
       </section>
-      <section class="brands">
+      <section class="brands container">
          <div class="popularno">
          <h2 class="popular">
             Популярные производители:
@@ -192,6 +214,7 @@
          </ul>
       </section>
       <section class="service">
+         <div class="container">
          <h2>
             Сервисы
          </h2>
@@ -228,8 +251,9 @@
                </p>
             </li>
          </ul>
+         </div>
       </section>
-      <section class="main-text">
+      <section class="main-text container">
          <div class="main-text-about">
             <h1 class="visually-hidden">Интернет-магазин электроинструментов</h1>
             <h2>Компания "Техномарт"</h2>
@@ -257,9 +281,11 @@
       </div>
    </main>
    <footer class="main-footer">
-      <div class="footer-top">
-         <div class="footer-top-first">
+      <div class="footer-top container">
+        <div>
          <img src="img/логотип.png" width="220" height="68" alt="Логотип Техномарт">
+         </div>
+         <div>
          <nav>
             <ul class="footer-site-navigation">
                <li>
@@ -280,8 +306,14 @@
             </ul>
          </nav>
          </div>
-         <p class="white-footer-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+       </div>
+         <div class="footer-middle container">
+          <div>
+         <p class="white-footer-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
          <a class="white-footer-text" href="tel:+781255505555">+7(812)555-05-555</a>
+         </p>
+         </div>
+         <div>
          <ul class="footer-bottom-navigation">
             <li>
                <a href="blank.html">Материалы</a>
@@ -296,9 +328,12 @@
                <a href="blank.html">Спецпредложения</a>
             </li>
          </ul>
+         </div>
+         </div>
       </div>
       <div class="footer-bottom">
-         <div class="footer-bottom-text">
+        <div class="footer-bottom-blocks container">
+          <div>
          <p>© 2010-2019 Компания «Техномарт» 
             <br>Все права защищены
          </p>
@@ -328,6 +363,7 @@
                </p>
             </div>
          </div>
+      </div>
       </div>
    </footer>
    <section class="main-modal-form">
