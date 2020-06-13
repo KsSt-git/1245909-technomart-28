@@ -209,6 +209,11 @@ ul {
 	max-width: auto;
 	margin-top: 7px;
 }
+
+.vhod {
+	background-color: #ffffff;
+	margin-left: 10px;
+}
 /* site-navigation */
 
 .site-navigation {
@@ -225,6 +230,7 @@ ul {
 	height: 60px;
 	max-width: 940px;
 		padding-inline-start: 0;
+		margin-bottom: 60px;
 }
 
 
@@ -249,8 +255,9 @@ ul {
 }
 
 .actions-list {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	grid-template-rows: 123px 123px 123px;
 
 }
 .actions-list h2, .vertical-actions-list h2 {
@@ -279,23 +286,28 @@ ul {
 
 .actions-item-1 {
 	background: #FFBF47;
-	width: 300px;
-	padding-left: 23px;
+	display: flex;
+	justify-content: space-around;
 }
 
 .actions-item-2 {
 	background: #3BBCE3;
-	width: 300px;
-	padding-left: 23px;
+		display: flex;
+	justify-content: space-around;
 }
 
 .actions-item-3 {
 	background: #DC91D8;
-	width: 300px;
-	padding-left: 23px;
+		display: flex;
+	justify-content: space-around;
 }
 
 /* main-slider */
+.main-slider {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
 .main-slider h2 {
 	font-family: "Cuprum", Arial, sans-serif;
 	color: var(--basic-white);
@@ -310,6 +322,7 @@ ul {
 	color: var(--basic-white);
 	font-size: 18px;
 }
+
 
 .main-slider a,
 .popular-link,
@@ -332,12 +345,32 @@ ul {
 /* vertical-actions-list */
 .actions-item4 {
 	background: #8ED78F;
+	grid-column: 3 / 4;
+	grid-row: 2 / -2;
+		display: flex;
+	justify-content: space-around;
 }
 
 .actions-item5 {
 	background: #FFC047;
+	grid-column: 3 / 4;
+		display: flex;
+	justify-content: space-around;
 }
 
+.actions-item-img {
+	padding-top: 31px;
+	padding-left: 34px;
+}
+
+.actions-item-link {
+	display: flex;
+	width: 135px;
+	height: 38px;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
 /* popular */
 .popularno {
 	background-color: #F9F5F0;
