@@ -48,6 +48,10 @@ ul {
 	padding-inline-start: 0;
 }
 
+nav {
+
+}
+
 .visually-hidden
 {
 	display: none;
@@ -273,6 +277,7 @@ ul {
 /* actions */
 .actions {
 	width: 940px;
+
 }
 
 .actions-list {
@@ -587,7 +592,6 @@ justify-content: space-around;
 {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 18px;
-	font-weight: regular;
 	list-style-image: url(img/icon-line.svg);
 }
 
@@ -598,6 +602,7 @@ justify-content: space-around;
 .main-text-contacts img {
 
 }
+
 
 /* footer */
 .main-footer {
