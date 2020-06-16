@@ -551,7 +551,11 @@ justify-content: space-around;
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: regular;
-	padding-top: 64px;
+
+}
+
+.service h2 {
+padding-top: 64px;
 }
 
 .description h2 {
@@ -905,20 +909,27 @@ justify-content: space-around;
 	margin: 0;
 }
 
+.breadcrumbs:first-child a {
+	    margin-right: 13px;
+}
+
 .breadcrumbs li {
 	  position: relative;
   margin-right: 40px;
 }
 
-.breadcrumbs li::after {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-image: url(img/Shape.svg);
-    top: 7px;
-  right: -25px;
+.breadcrumbs li:not(:last-child):after  {
+content: "";
+    width: 8px;
+    height: 8px;
+    border: 1px solid #c1c6ce;
+    border-top-style: none;
+    border-left-style: none;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 3px;
 }
+
 
 .page-title {
 	color: #32425C;
