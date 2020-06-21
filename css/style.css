@@ -124,7 +124,6 @@ align-content: center;
     width: 150px;
     height: 42px;
         margin-bottom: 15px;
-        margin-left: 26px;
 }
 
 
@@ -139,15 +138,22 @@ align-content: center;
 
 .main-header-busket {
 	position: relative;
-		width: 100px;
-    padding: 12px 0 12px 50px;
+		width: 136px;
+		height: 42px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+        justify-content: flex-start;
+        padding-left: 35px;
 }
+
+
 
 .main-header-busket::before {
 	    content: "";
   position: absolute;
-    top: 15px;
-    left: 20px;
+top: 12px;
+    left: 12px;
   width: 15px;
   height: 15px;
    background-image: url(../img/icon-cart.svg);
@@ -165,7 +171,11 @@ align-content: center;
 .main-header-zakladka {
 	position: relative;
 	    width: 105px;
-    padding: 12px 0 12px 45px;
+	    height: 42px;
+	    display: flex;
+	    align-content: center;
+	    align-items: center;
+
 }
 
 .main-header-zakladka::before {
@@ -189,8 +199,8 @@ align-content: center;
 }
 
 .busket {
-margin-bottom: 10px;
-    margin-left: 50px;
+margin-bottom: 15px;
+
 }
 
 .busket:active {
@@ -198,12 +208,18 @@ background: #161D29;
 }
 
 .zakladka {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
+	    margin-left: 38px;
 }
 .zakladka:active {
 background: #161D29;
 }
 
+.full {
+background-color: #EE3643;
+width: 136px;
+height: 42px;
+}
 
 .search {
 	position: relative;
@@ -371,6 +387,23 @@ left: 19px;
 	justify-content: space-between;
 	max-width: auto;
 	margin-top: 7px;
+}
+
+.head-links-catalog {
+display: flex;
+flex-direction: column;
+width: 299px;
+height: 70px;
+}
+
+.head-links-lk {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 7px;
+}
+
+.head-login {
+	max-height: 45px;
 }
 
 .vhod {
@@ -674,15 +707,35 @@ display: flex;
 justify-content: space-around;
 }
 
+
+
 .main-popular-items li,
 .popular-brands li,
 .catalog li {
 	border: 1px solid #EAEAEA;
-	max-width: 220px;
+	width: 220px;
 	margin-bottom: 20px;
 	    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.main-popular-items li,
+.catalog li {
+height: 318px;
+}
+
+.popular-item-image {
+	    margin: 0;
+    position: relative;
+    width: 220px;
+    height: 167px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.popular-item-image img {
+	padding-top: 30px;
 }
 
 .popular-brands li:hover {
@@ -694,6 +747,8 @@ justify-content: space-around;
 opacity: 0.5;
 box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
+
+
 
 
 .main-popular-items h3,
@@ -718,12 +773,28 @@ box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 	font-size: 17px;
 	line-height: 18px;
 	color: #FFFFFF; 
-	background-color: var(--Basic-red);
+	background: url(../img/red-button.svg) no-repeat;
+	background-position: center;
 	text-align: center;
+	padding-top: 10px;
+	padding-left: 32px;
+	padding-bottom: 10px;
+	padding-right: 44px;
 }
 
-.main-popular-items img {
+.new {
+	position: relative;
+}
 
+.new::before {
+content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 70px;
+    height: 70px;
+    background: url(../img/new.svg) no-repeat 0 0;
 }
 
 /* service */
@@ -1032,12 +1103,42 @@ line-height: 30px;
 	height: 44px;
 }
 
-.social a {
+
+.social-vk,
+ .social-fb,
+ .social-insta {
 background-color: #212A3A;
 border-radius: 50px;
     width: 44px;
     height: 44px;
 }
+
+.social-vk:hover,
+ .social-fb:hover,
+ .social-insta:hover,
+ .social-vk:focus,
+ .social-fb:focus,
+ .social-insta:focus
+ {
+background-color: var(--Basic-red);
+}
+
+.social-vk img {
+	padding-top: 14px;
+	padding-left: 9px;
+}
+
+.social-fb img {
+	padding-top: 11px;
+	padding-left: 16px;
+}
+
+
+.social-insta img {
+	padding-top: 11px;
+	padding-left: 11px;
+}
+
 
 
 .footer-bottom-links {
@@ -1107,7 +1208,31 @@ border-radius: 50px;
 	line-height: 21px;
 	font-weight: regular;
 	background-color: rgba(0, 0, 0, 0.0001);
+	position: relative;
 }
+
+.login::before {
+content: '';
+    position: absolute;
+    top: 2px;
+    left:-40px;
+    z-index: 10;
+    width: 20px;
+    height: 18px;
+    background: url(../img/icon-user.svg) no-repeat 0 0;
+}
+
+.login::after {
+content: '';
+    position: absolute;
+    top: 2px;
+    left:200px;
+    z-index: 10;
+    width: 20px;
+    height: 17px;
+    background: url(../img/icon-login.svg) no-repeat 0 0;
+}
+
 
 .my-orders, .my-lk {
 	font-family: "Cuprum", Arial, sans-serif;
