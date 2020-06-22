@@ -116,20 +116,26 @@
         
       <section class="filters">
          <h2>Фильтр:</h2>
-         <form action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
+  <form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-item">
              <legend>Цена:</legend>
-             <div class="filters-price-first">
-             <label for="filter-price" class="visually-hidden">Цена</label>
-             <input type="range" class="filter-option-price-range" id="filter-price" name="filter-price" min="0" max="3000" step="1">
-           </div>
-             <div class="min-max">
-              <div>
-             <input type="text" class="filter-option-price" name="price-min" value="0">
-             </div>
-             <div><span>—</span></div>
-            <div><input type="text" class="filter-option-price" name="price-max" value="30000"></div>
-             </div>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min" tabindex="0"></div>
+            <div class="toggle toggle-max" tabindex="0"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">
+              от <input type="number" name="min-price" value="0">
+            </label>
+            <label class="max-price">
+              до <input type="number" name="max-price" value="30000">
+            </label>
+          </div>
+        </div>
           </fieldset>
           <hr>
           <fieldset>
