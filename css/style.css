@@ -1720,6 +1720,7 @@ nav {
 
 .up-sort .sort-up {
 	display: inline-block;
+	vertical-align: top;
 	width: 11px;
 	height: 10px;
 	border: none;
@@ -1728,6 +1729,7 @@ nav {
 
 .up-sort .sort-down {
 	display: inline-block;
+	vertical-align: top;
 	width: 11px;
 	height: 10px;
 	border: none;
@@ -1955,6 +1957,7 @@ nav {
 }
 .slider-controls label {
 	display: inline-block;
+	vertical-align: top;
 	width: 10px;
 	height: 10px;
 
