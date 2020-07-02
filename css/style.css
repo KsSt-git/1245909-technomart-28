@@ -1160,13 +1160,13 @@ nav {}
 .services-item:first-child {
 	background-image: url(../img/bg-1.png);
 	background-repeat: no-repeat;
-	background-position: 152px 19px;
+	background-position: 152px 25px;
 }
 
 .services-item:nth-child(2) {
 	background-image: url(../img/bg-2.png);
 	background-repeat: no-repeat;
-	background-position: 233px 7px;
+	background-position: 233px 14px;
 }
 
 .services-item:last-child {
