@@ -595,11 +595,11 @@ nav {}
 /* main-slider */
 
 .main-slider li:first-child {
-	background-image: url(../img/slide1.png)
+	background-image: url(../img/slide1.jpg)
 }
 
 .main-slider li:last-child {
-	background-image: url(../img/slide2.png)
+	background-image: url(../img/slide2.jpg)
 }
 
 .main-slider h2 {
@@ -1121,7 +1121,7 @@ nav {}
 
 .services-control label {
 	display: block;
-	font-family: Cuprum;
+	font-family: "Cuprum", Arial, sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 21px;
@@ -1870,7 +1870,7 @@ nav {}
 }
 
 .price-controls input {
-	font-family: inherit;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: inherit;
 	width: 95px;
 	height: 38px;
