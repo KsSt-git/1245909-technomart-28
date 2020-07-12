@@ -5,7 +5,7 @@
       <title>HTML Academy: Техномарт</title>
       <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
       <link href="css/normalize.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
+      <link href="css/min-style.css" rel="stylesheet">
    </head>
    <body class="page-body">
       <header class="main-header">
@@ -47,7 +47,8 @@
             <div class="header-links">
                <div class="head-links-catalog">
                   <div class="head-login">
-                     <a class="login" href="">Равшан Джамшутович</a>
+                     <a class="login" href="enter.html">Равшан Джамшутович</a>
+                     <a class="out" href="out.html"></a>
                   </div>
                   <div class="head-links-lk">
                      <a class="my-orders" href="">Мои заказы</a>
@@ -128,11 +129,11 @@
                            </div>
                            <div class="price-controls">
                               <label class="min-price">
-                              <input type="text" name="min-price" value="0" aria-label="0">
+                              <input type="number" name="min-price" min="0" value="0" aria-label="0">
                               </label>
                               —
                               <label class="max-price">
-                              <input type="text" name="max-price" value="30000" aria-label="30000">
+                              <input type="number" name="max-price" min="0" value="30000" aria-label="30000">
                               </label>
                            </div>
                         </div>
